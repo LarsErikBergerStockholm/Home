@@ -1,6 +1,7 @@
 import React from 'react';
 import { useFetch } from './hooks';
 function Joke() {
+  console.log('sdfsd');
   const { setup, punchline } = useFetch('https://official-joke-api.appspot.com/jokes/random', {});
 
   return (
@@ -11,5 +12,5 @@ function Joke() {
     </div>
   )
 }
- 
+
 export default Joke;
